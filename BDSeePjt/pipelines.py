@@ -24,7 +24,7 @@ class BdseepjtPipeline(object):
         self.file1 = codecs.open("item_list.json", 'wb', encoding="utf-8")
         self.file2 = codecs.open("item_detail.json", 'wb', encoding="utf-8")
 
-        self.conn = pymysql.connect(host="127.0.0.1",user="root", passwd="sunny741", db = "BDSeeDB")
+        self.conn = pymysql.connect(host="127.0.0.1",user="root", passwd="******", db = "BDSeeDB")#替换为你的mysql密码
 
         host = settings['MONGODB_HOST']
         port = settings['MONGODB_PORT']
@@ -36,7 +36,7 @@ class BdseepjtPipeline(object):
 
         #qiniu 需要填写你的 Access Key 和 Secret Key
         access_key = 'CYvrg9XiH9soiLGQ9xjJkAb51ZLBkn4QG9i1KrDX'
-        secret_key = 'L7V4fEsEoRMrwAOUKWM0l7zyQT4ZR11HedjVqzxI'
+        secret_key = 'L7V4fEsEoRMr×××××××0l7zyQT4ZR11HedjVqzxI'#替换为你的qiniu秘钥
         #构建鉴权对象
         self.q = Auth(access_key, secret_key)
         #要上传的空间
