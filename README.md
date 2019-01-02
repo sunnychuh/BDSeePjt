@@ -1,7 +1,7 @@
 # BDSeePjt
 A scrapy crawler for https://www.bdsee.cn/
 
-自己学scrapy爬虫时联系写的，抓取www.bdsee.cn上的电影信息
+自己学scrapy爬虫时写的，抓取www.bdsee.cn上的电影信息
 
 1）爬取页面包括电影列表页和电影详情页遍历
 
